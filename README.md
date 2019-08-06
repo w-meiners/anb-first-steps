@@ -1,17 +1,15 @@
 # anb-first-steps
 Erste Schritte mit Azure Notebooks
 
-In diesem Repository geht es um erste Schritte mit
+In diesem Projekt geht es um erste Schritte mit
 
     Azure Notebooks
 
 Azure Notebooks werden von Microsoft bereitgestellt. Es handelt sich dabei um Jupyter Notebooks, 
-die auf Servern von Microsoft ausgeführt werden.
+die auf Servern von Microsoft ausgeführt werden. Sie laufen z.B. unter Python 3.6.
 
-In diesem Repository geht es um Jupyter Notebooks, die unter Python 3.6 laufen.
+Ziel dieses Projekts ist es, Azure/Jupyter Notebooks mit Python 3.6 nutzen zu lernen, um mit den Modulen
 
-Ziel ist es, Azure/Jupyter Notebooks mit Python nutzen zu können, um mit den Modulen
-
-    sympy, numpy, pandas und matplotlib
+    math, sympy, numpy, pandas und matplotlib
     
-einfache mathematische Probleme bearbeiten zu können.
+einfache mathematische Probleme bearbeiten und die Ergebnisse darstellen zu können.
