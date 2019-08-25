@@ -13,3 +13,6 @@ Ziel dieses Projekts ist es, Azure/Jupyter Notebooks mit Python 3.6 nutzen zu le
     math, sympy, numpy, pandas und matplotlib
     
 einfache mathematische Probleme bearbeiten und die Ergebnisse darstellen zu können.
+
+Sie können dies Repository interaktiv unter Binder bearbeiten:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/w-meiners/anb-first-steps.git/master)
