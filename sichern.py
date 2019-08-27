@@ -12,15 +12,22 @@ def copy_files_to_destination(*src, dest='.', create_dest=True, follow_symlinks=
         Datei 'a/c' nach 'b' kopiert
     '''
     import os, shutil as su
-    if not os.path.isdir(dest):
+    
+    if not os.path.exists(dest):
         if not create_dest:
             raise Exception(f"Pfad '{dest}' existiert nicht")
+
         try:
             os.mkdir(dest)
             print(f"Pfad '{dest}' angelegt")
         except:
             raise Exception(f"Pfad '{dest}' konnte nicht angelegt werden")
-        
+
+    else: # dest exists, but is it a path
+        if not os.path.isdir(dest):
+            raise Exception(f"'{dest}' ist kein Directory")
+            
+    # dest exists and is a dir
     missing_files_list = []
     existing_dest_files_list = []
     for s in src:
@@ -34,7 +41,7 @@ def copy_files_to_destination(*src, dest='.', create_dest=True, follow_symlinks=
                 print(f"Datei '{s}' nach '{dest}' kopiert")
     
     for s in missing_files_list:
-        print(f"Datei '{s}' wurde nicht gefunden")
+        print(f"'{s}' ist keine Datei")
         
     print()
         
